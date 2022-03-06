@@ -5,7 +5,6 @@ public class Model {
     private String textPost;
     private String imageProfile;
     private String textLike;
-    private String textUser;
 
     public String getPhoto() {
         return photo;
@@ -44,9 +43,9 @@ public class Model {
         this.textPost = textPost;
     }
 
-    public Model(String imageProfile, String textLike, String textUser) {
+    public Model(String photo, String textPost, String imageProfile) {
+        this.photo = photo;
+        this.textPost = textPost;
         this.imageProfile = imageProfile;
-        this.textLike = textLike;
-        this.textUser = textUser;
     }
 }

@@ -40,8 +40,7 @@ public class MainFragment extends Fragment {
     private void loadData() {
         arrayList = new ArrayList<>();
         arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
+                ".lenta.ru/images/2021/08/12/11/20210812115738455/square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
         arrayList.add(new Model("https://icdn" +
                 ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
                 "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
