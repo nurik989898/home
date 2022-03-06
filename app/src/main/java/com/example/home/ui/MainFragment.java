@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.home.MainAdapter;
 import com.example.home.Model;
+import com.example.home.R;
 import com.example.home.databinding.FragmentMainBinding;
 
 import java.util.ArrayList;
@@ -20,12 +20,13 @@ import java.util.ArrayList;
 
 public class MainFragment extends Fragment {
     private FragmentMainBinding binding;
-    ArrayList<Model>arrayList = new ArrayList<>();
+    ArrayList<Model> arrayList = new ArrayList<>();
     private MainAdapter adapter;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-       binding = FragmentMainBinding.inflate(LayoutInflater.from(requireContext()),container,false);
+        binding = FragmentMainBinding.inflate(LayoutInflater.from(requireContext()), container, false);
         return binding.getRoot();
     }
 
@@ -39,34 +40,16 @@ public class MainFragment extends Fragment {
 
     private void loadData() {
         arrayList = new ArrayList<>();
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
-        arrayList.add(new Model("https://icdn" +
-                ".lenta.ru/images/2021/08/12/11/20210812115738455/" +
-                "square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg","This hot!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
+        arrayList.add(new Model("https://s3.amazonaws.com/the-drive-staging/message-editor%2F1528475104876-1-bmwi8.jpg","I like this car!"));
     }
 }

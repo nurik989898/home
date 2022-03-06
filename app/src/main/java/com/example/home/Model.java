@@ -43,6 +43,10 @@ public class Model {
         this.textPost = textPost;
     }
 
+    public Model(String photo) {
+        this.photo = photo;
+    }
+
     public Model(String photo, String textPost, String imageProfile) {
         this.photo = photo;
         this.textPost = textPost;

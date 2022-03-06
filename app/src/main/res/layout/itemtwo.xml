@@ -6,9 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 <ImageView
     android:id="@+id/pic_log"
-    android:layout_width="50dp"
+    android:layout_width="80dp"
     android:paddingStart="25dp"
-    android:layout_height="50dp"
+    android:layout_height="80dp"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"/>
     <TextView
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         tools:text="Hello"
         android:gravity="center"
-        android:textSize="8dp"
+        android:textSize="18dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,8 +25,8 @@
         app:layout_constraintEnd_toStartOf="@id/image_seclog"/>
     <ImageView
         android:id="@+id/image_seclog"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         app:layout_constraintStart_toEndOf="@id/text_log"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

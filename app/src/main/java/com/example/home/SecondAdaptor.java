@@ -15,16 +15,19 @@ import java.util.ArrayList;
 public class SecondAdaptor extends RecyclerView.Adapter<SecondAdaptor.ViewHolder> {
     private ItemtwoBinding binding;
     ArrayList<Model> modelss = new ArrayList<>();
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         binding = ItemtwoBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
         return new ViewHolder(binding);
     }
-
+    public SecondAdaptor(ArrayList<Model> modelss) {
+        this.modelss = modelss;
+    }
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-holder.bind(modelss.get(position));
+    holder.bind(modelss.get(position));
     }
 
     @Override
@@ -40,9 +43,11 @@ holder.bind(modelss.get(position));
             binding = itemView;
         }
 
+
+
         public void bind(Model model) {
-            Glide.with(binding.picLog).load(model.getPhoto()).into(binding.picLog);
-            Glide.with(binding.imageSeclog).load(model.getPhoto()).into(binding.imageSeclog);
+            Glide.with(binding.picLog).load(model.getPhoto()).circleCrop().into(binding.picLog);
+            Glide.with(binding.imageSeclog).load(model.getImageProfile()).into(binding.imageSeclog);
             binding.textLog.setText(model.getTextPost());
         }
     }
